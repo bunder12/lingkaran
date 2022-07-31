@@ -1,0 +1,98 @@
+.container {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.img{
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  left: 30%;
+}
+
+.card{
+  /* background-color: aliceblue; */
+  width: 420px;
+  height: 420px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card:hover .roundedTop{
+  height: 50%;
+  transform: translate(280px, 220px);
+}
+
+.roundedTop{
+  background-color: rgb(241, 173, 224);
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 210px;
+  border-top-right-radius: 210px;
+  border-bottom: 0;
+  cursor: pointer;
+  transition: transform 1s;
+  z-index: 10;
+}
+
+.roundedBottom{
+  background-color: rgb(169, 238, 215);
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 210px;
+  border-bottom-right-radius: 210px;
+  border-bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
+}
+
+.kotak1{
+  background-color: bisque;
+  width: 280px;
+  height: 80px;
+  position: absolute;
+  top: 80px;
+  border-radius: 4px;
+  animation: kotak1 5s infinite;
+  text-align: center;
+  z-index: 20;
+}
+
+.kotak1 h1{
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+
+.iconKotak{
+  height: 5px;
+  width: 40px;
+  background-color: rgb(48, 48, 48);
+  margin-right: 10px;
+}
+
+.containerHiring{
+  display: flex;
+  align-items: center;
+}
+
+.areaLeft{
+  position: absolute;
+  left: 80px;
+  top: 180px;
+}
+
+.areaRight{
+  position: absolute;
+  right: 80px;
+  bottom: 180px;
+}
+
+@keyframes kotak1 {
+  50% {transform: translateX(200px);}
+}
